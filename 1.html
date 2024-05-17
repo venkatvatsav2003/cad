@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance</title>
+    <style>
+        body {
+            background-color: #dfcfbe;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .attendance {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            animation: fadeInRight 1s ease-out;
+        }
+
+        .attendance h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        label {
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <section class="attendance">
+        <h2>Attendance</h2>
+        <form id="attendanceForm">
+            <label>
+                <input type="checkbox" name="SHASHANK B S"> SHASHANK B S
+            </label><br><br>
+            <label>
+                <input type="checkbox" name="NOAH K BEHNUR"> NOAH K BEHNUR
+            </label><br><br>
+            <label>
+                <input type="checkbox" name="VENKAT VATSAV"> VENKAT VATSAV
+            </label><br><br>
+            <input type="checkbox" name="JESUINE MARIA"> JESUINE MARIA
+        </label><br><br><input type="checkbox" name="NAGAMANI ">NAGAMANI
+    </label><br> <br><input type="checkbox" name="VAISHNAVI"> VAISHNAVI
+</label><br><br> <input type="checkbox" name="SWETHA"> SWETHA
+</label><br><br> <input type="checkbox" name="SAHANA "> SAHANA
+</label><br><br> <input type="checkbox" name="SHARAN T "> SHARAN T 
+</label><br> <br><input type="checkbox" name="DURBADAL"> DURBADAL
+</label><br><br> <br><br></nr>
+            <button type="submit" onclick="submitAttendance()">Submit Attendance</button>
+        </form>
+    </section>
+
+    <script>
+        function submitAttendance() {
+            alert("Attendance submitted successfully!");
+        }
+    </script>
+</body>
+</html>
