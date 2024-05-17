@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Management System</title>
     <style>
-        /* General Styles */
+    
         body {
             background-color: #dfcfbe;
             font-family: 'Times New Roman', Times, serif;
@@ -35,7 +35,7 @@
             animation: fadeInUp 1s ease-out;
         }
 
-        /* Course List Styles */
+       
         #courses {
             padding: 20px;
             background-color: #fff;
@@ -113,7 +113,7 @@
             background-color: #555;
         }
 
-        /* Reviews Section Styles */
+       
         .reviews {
             background-color: #fff;
             border-radius: 10px;
@@ -139,29 +139,9 @@
             font-size: 1.1rem;
         }
 
-        /* Attendance Section Styles */
-        .attendance {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 800px;
-            animation: fadeInRight 1s ease-out;
-        }
+    
 
-        .attendance h2 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-        }
-
-        label {
-            font-size: 1.1rem;
-        }
-
-        /* Chatbot Styles */
+      
         .chatbot {
             background-color: #fff;
             border-radius: 10px;
@@ -268,28 +248,8 @@
             <h2>Student Reviews</h2>
             <ul id="reviewList"></ul>
         </section>
-        <section class="attendance">
-            <h2>Attendance</h2>
-            <form id="attendanceForm">
-                <label>
-                    <input type="checkbox" name="SHASHANK B S"> SHASHANK B S
-                </label><br><br>
-                <label>
-                    <input type="checkbox" name="NOAH K BEHNUR"> NOAH K BEHNUR
-                </label><br><br>
-                <label>
-                    <input type="checkbox" name="VENKAT VATSAV"> VENKAT VATSAV
-                </label><br><br>
-                <input type="checkbox" name="JESUINE MARIA"> JESUINE MARIA
-            </label><br><br><input type="checkbox" name="NAGAMANI ">NAGAMANI
-        </label><br> <br><input type="checkbox" name="VAISHNAVI"> VAISHNAVI
-    </label><br><br> <input type="checkbox" name="SWETHA"> SWETHA
-</label><br><br> <input type="checkbox" name="SAHANA "> SAHANA
-</label><br><br> <input type="checkbox" name="SHARAN T "> SHARAN T 
-</label><br> <br><input type="checkbox" name="DURBADAL"> DURBADAL
-</label><br><br> <br><br></nr>
-                <button type="submit">Submit Attendance</button>
-            </form>
+        <section>
+           < a href ="1.html">CLICK TO TAKE ATTENDENCE</a>
         </section>
         <section class="chatbot">
             <h2>Course Chatbot</h2>
@@ -316,11 +276,11 @@
                 { id: 3, title: 'Data Structures and Algorithms', videoId: 'https://www.youtube.com/embed/watch?v=5_5oE5lgrhw&list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi' }
             ];
 
-            // Function to render course list
+            
             function renderCourseList() {
-                // Clear the course list
+                
                 courseList.innerHTML = '';
-                // Render each course
+               
                 courses.forEach(course => {
                     const li = document.createElement('li');
                     li.classList.add('course-item');
@@ -330,9 +290,9 @@
                 });
             }
 
-            // Function to display YouTube playlist
+           
             function displayVideo(course) {
-                // Set the current course to the selected course
+              
                 currentCourse = course;
 
                 const videoContainer = document.createElement('div');
@@ -345,15 +305,15 @@
                 courseList.appendChild(videoContainer);
             }
 
-            // Function to go back to the course list
+            
             window.goBack = function () {
                 renderCourseList();
             }
 
-            // Call renderCourseList initially to display the course list
+
             renderCourseList();
 
-            // Event listener for review form submission
+           
             reviewForm.addEventListener('submit', function (event) {
                 event.preventDefault();
                 const reviewContent = reviewText.value;
@@ -363,7 +323,7 @@
                 }
             });
 
-            // Function to add review
+           
             function addReview(content) {
                 const li = document.createElement('li');
                 li.classList.add('review-item');
@@ -379,14 +339,14 @@
 
             sampleReviews.forEach(review => addReview(review));
 
-            // Event listener for attendance form submission
+           
             attendanceForm.addEventListener('submit', function (event) {
                 event.preventDefault();
                 alert('Attendance has been marked.');
             });
         });
 
-        // Function to display answer based on selected option
+       
         function showAnswer(option) {
             const chatbotOutput = document.getElementById('chatbotOutput');
             let answer = '';
